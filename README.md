@@ -1,1 +1,1 @@
-openresty_clibs
+clibs(so) for openresty lua

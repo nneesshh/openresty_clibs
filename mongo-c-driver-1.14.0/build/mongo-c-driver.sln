@@ -1,0 +1,33 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bson_static", "src\libbson\bson_static.vcxproj", "{4A5BD265-3BE4-3DFF-8DD4-17DF81795AF3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mongoc_static", "src\libmongoc\mongoc_static.vcxproj", "{C5ECD9BD-E3EC-3764-ABC0-EE6592E80B55}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4A5BD265-3BE4-3DFF-8DD4-17DF81795AF3} = {4A5BD265-3BE4-3DFF-8DD4-17DF81795AF3}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A5BD265-3BE4-3DFF-8DD4-17DF81795AF3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4A5BD265-3BE4-3DFF-8DD4-17DF81795AF3}.Debug|Win32.Build.0 = Debug|Win32
+		{4A5BD265-3BE4-3DFF-8DD4-17DF81795AF3}.Release|Win32.ActiveCfg = Release|Win32
+		{4A5BD265-3BE4-3DFF-8DD4-17DF81795AF3}.Release|Win32.Build.0 = Release|Win32
+		{C5ECD9BD-E3EC-3764-ABC0-EE6592E80B55}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C5ECD9BD-E3EC-3764-ABC0-EE6592E80B55}.Debug|Win32.Build.0 = Debug|Win32
+		{C5ECD9BD-E3EC-3764-ABC0-EE6592E80B55}.Release|Win32.ActiveCfg = Release|Win32
+		{C5ECD9BD-E3EC-3764-ABC0-EE6592E80B55}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B533AF0-00DB-3269-94AD-CD975BD55843}
+	EndGlobalSection
+EndGlobal

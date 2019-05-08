@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4BAEF236-5C98-30E6-9FA8-961F0517CBAA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\src;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\src;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\..\..\src\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\src;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\src;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\..\..\src\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\src;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\src;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\..\..\src\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\src;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\src;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\..\..\src\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/lizhanyou/Downloads/mongo-c-driver-1.14.0/src/libmongoc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/lizhanyou/Downloads/mongo-c-driver-1.14.0 -BC:/Users/lizhanyou/Downloads/mongo-c-driver-1.14.0/build --check-stamp-file C:/Users/lizhanyou/Downloads/mongo-c-driver-1.14.0/build/src/libmongoc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/lizhanyou/Downloads/mongo-c-driver-1.14.0/src/libmongoc/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckTypeSize.c.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindICU.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\CMakeFiles\CheckIncludeFiles\HAVE_STDARG_H.c;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\CMakeFiles\CheckIncludeFiles\HAVE_UNISTD_H.c;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\CMakeFiles\CheckTypeSize\HAVE_SOCKLEN.c;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\cmake\CheckSchedGetCPU.cmake;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\cmake\FindResSearch.cmake;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\cmake\FindSnappy.cmake;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\cmake\MongoCPackage.cmake;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\CMakeLists.txt;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\build\cmake\libmongoc-1.0-config-version.cmake.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\build\cmake\libmongoc-1.0-config.cmake.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\build\cmake\libmongoc-static-1.0-config-version.cmake.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\build\cmake\libmongoc-static-1.0-config.cmake.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\src\libmongoc-1.0.pc.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\src\libmongoc-ssl-1.0.pc.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\src\libmongoc-static-1.0.pc.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\src\mongoc\mongoc-config.h.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\src\mongoc\mongoc-version.h.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\zlib-1.2.11\zconf.h.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/lizhanyou/Downloads/mongo-c-driver-1.14.0/src/libmongoc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/lizhanyou/Downloads/mongo-c-driver-1.14.0 -BC:/Users/lizhanyou/Downloads/mongo-c-driver-1.14.0/build --check-stamp-file C:/Users/lizhanyou/Downloads/mongo-c-driver-1.14.0/build/src/libmongoc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/lizhanyou/Downloads/mongo-c-driver-1.14.0/src/libmongoc/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckTypeSize.c.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindICU.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\CMakeFiles\CheckIncludeFiles\HAVE_STDARG_H.c;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\CMakeFiles\CheckIncludeFiles\HAVE_UNISTD_H.c;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\CMakeFiles\CheckTypeSize\HAVE_SOCKLEN.c;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\cmake\CheckSchedGetCPU.cmake;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\cmake\FindResSearch.cmake;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\cmake\FindSnappy.cmake;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\cmake\MongoCPackage.cmake;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\CMakeLists.txt;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\build\cmake\libmongoc-1.0-config-version.cmake.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\build\cmake\libmongoc-1.0-config.cmake.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\build\cmake\libmongoc-static-1.0-config-version.cmake.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\build\cmake\libmongoc-static-1.0-config.cmake.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\src\libmongoc-1.0.pc.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\src\libmongoc-ssl-1.0.pc.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\src\libmongoc-static-1.0.pc.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\src\mongoc\mongoc-config.h.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\src\mongoc\mongoc-version.h.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\zlib-1.2.11\zconf.h.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/lizhanyou/Downloads/mongo-c-driver-1.14.0/src/libmongoc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/lizhanyou/Downloads/mongo-c-driver-1.14.0 -BC:/Users/lizhanyou/Downloads/mongo-c-driver-1.14.0/build --check-stamp-file C:/Users/lizhanyou/Downloads/mongo-c-driver-1.14.0/build/src/libmongoc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/lizhanyou/Downloads/mongo-c-driver-1.14.0/src/libmongoc/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckTypeSize.c.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindICU.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\CMakeFiles\CheckIncludeFiles\HAVE_STDARG_H.c;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\CMakeFiles\CheckIncludeFiles\HAVE_UNISTD_H.c;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\CMakeFiles\CheckTypeSize\HAVE_SOCKLEN.c;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\cmake\CheckSchedGetCPU.cmake;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\cmake\FindResSearch.cmake;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\cmake\FindSnappy.cmake;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\cmake\MongoCPackage.cmake;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\CMakeLists.txt;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\build\cmake\libmongoc-1.0-config-version.cmake.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\build\cmake\libmongoc-1.0-config.cmake.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\build\cmake\libmongoc-static-1.0-config-version.cmake.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\build\cmake\libmongoc-static-1.0-config.cmake.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\src\libmongoc-1.0.pc.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\src\libmongoc-ssl-1.0.pc.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\src\libmongoc-static-1.0.pc.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\src\mongoc\mongoc-config.h.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\src\mongoc\mongoc-version.h.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\zlib-1.2.11\zconf.h.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/lizhanyou/Downloads/mongo-c-driver-1.14.0/src/libmongoc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/lizhanyou/Downloads/mongo-c-driver-1.14.0 -BC:/Users/lizhanyou/Downloads/mongo-c-driver-1.14.0/build --check-stamp-file C:/Users/lizhanyou/Downloads/mongo-c-driver-1.14.0/build/src/libmongoc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/lizhanyou/Downloads/mongo-c-driver-1.14.0/src/libmongoc/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckTypeSize.c.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindICU.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\CMakeFiles\CheckIncludeFiles\HAVE_STDARG_H.c;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\CMakeFiles\CheckIncludeFiles\HAVE_UNISTD_H.c;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\CMakeFiles\CheckTypeSize\HAVE_SOCKLEN.c;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\cmake\CheckSchedGetCPU.cmake;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\cmake\FindResSearch.cmake;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\cmake\FindSnappy.cmake;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\cmake\MongoCPackage.cmake;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\CMakeLists.txt;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\build\cmake\libmongoc-1.0-config-version.cmake.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\build\cmake\libmongoc-1.0-config.cmake.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\build\cmake\libmongoc-static-1.0-config-version.cmake.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\build\cmake\libmongoc-static-1.0-config.cmake.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\src\libmongoc-1.0.pc.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\src\libmongoc-ssl-1.0.pc.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\src\libmongoc-static-1.0.pc.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\src\mongoc\mongoc-config.h.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\src\mongoc\mongoc-version.h.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\zlib-1.2.11\zconf.h.in;C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\src\libmongoc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\ZERO_CHECK.vcxproj">
+      <Project>{FDC0968B-A52C-3613-8007-7D4CDC87F0F9}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\aggregation1.vcxproj">
+      <Project>{9D747AEC-28FA-3530-A8B6-D25305258FD4}</Project>
+      <Name>aggregation1</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\basic-aggregation.vcxproj">
+      <Project>{AA526939-D2F4-3CCB-A9A4-52A41D6D9D63}</Project>
+      <Name>basic-aggregation</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\bulk-collation.vcxproj">
+      <Project>{17D25421-9EE2-38EF-BF1B-6266E119A117}</Project>
+      <Name>bulk-collation</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\bulk1.vcxproj">
+      <Project>{31E3A530-A839-3DD0-A9B8-3C11CF91DF2F}</Project>
+      <Name>bulk1</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\bulk2.vcxproj">
+      <Project>{ECA2FEBB-D88E-33B4-975E-D3D28B6BBFE2}</Project>
+      <Name>bulk2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\bulk3.vcxproj">
+      <Project>{40014409-3DBC-34A6-81A9-B5F864C96216}</Project>
+      <Name>bulk3</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\bulk4.vcxproj">
+      <Project>{0D32298E-BDCC-32F9-8957-0669781E8E4B}</Project>
+      <Name>bulk4</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\bulk5.vcxproj">
+      <Project>{BC46B125-2525-3902-BB2A-54A73FDA99A1}</Project>
+      <Name>bulk5</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\bulk6.vcxproj">
+      <Project>{6F9DE9CD-3924-3AF4-ACE8-FF8374C5C045}</Project>
+      <Name>bulk6</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\common-operations.vcxproj">
+      <Project>{279408E5-CE8E-38F7-95FB-69C9ED5BFB35}</Project>
+      <Name>common-operations</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\example-client.vcxproj">
+      <Project>{52CDC892-566D-312E-BC6A-E713B6990F5E}</Project>
+      <Name>example-client</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\example-collection-watch.vcxproj">
+      <Project>{047A6CDC-3304-3F0A-9958-0AE885501FD5}</Project>
+      <Name>example-collection-watch</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\example-command-monitoring.vcxproj">
+      <Project>{E480E68A-B1BA-306C-9613-F2AABDC4DF7A}</Project>
+      <Name>example-command-monitoring</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\example-command-with-opts.vcxproj">
+      <Project>{D6619E13-A13D-3937-8134-64E7E4AF8C22}</Project>
+      <Name>example-command-with-opts</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\example-create-indexes.vcxproj">
+      <Project>{ADF67223-3671-3480-B750-86345A0DBE1C}</Project>
+      <Name>example-create-indexes</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\example-gridfs.vcxproj">
+      <Project>{E8FEFE2B-F196-350C-A08B-5FC7C99C8AD2}</Project>
+      <Name>example-gridfs</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\example-gridfs-bucket.vcxproj">
+      <Project>{A77724CC-4E30-33F6-9C74-6FD25EF42D86}</Project>
+      <Name>example-gridfs-bucket</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\example-scram.vcxproj">
+      <Project>{BDF60FC5-372F-39E9-A140-FC349C5E1E7C}</Project>
+      <Name>example-scram</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\example-sdam-monitoring.vcxproj">
+      <Project>{36E187B0-3801-373A-8CEB-866BBF3A9A34}</Project>
+      <Name>example-sdam-monitoring</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\example-session.vcxproj">
+      <Project>{9046BAE2-B93D-3EF5-B1E3-7B9A542CCB70}</Project>
+      <Name>example-session</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\example-start-at-optime.vcxproj">
+      <Project>{DBE8205C-85E6-34F3-B404-E5E5EEAA41E3}</Project>
+      <Name>example-start-at-optime</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\example-transaction.vcxproj">
+      <Project>{8FA67359-09AA-3256-AE83-4DABD0BD3069}</Project>
+      <Name>example-transaction</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\example-update.vcxproj">
+      <Project>{907ADA1B-AA5A-3A7E-A481-07971296D4A0}</Project>
+      <Name>example-update</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\fam.vcxproj">
+      <Project>{576BFDB5-F0F6-3BAA-B306-31334AEB1396}</Project>
+      <Name>fam</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\find-and-modify.vcxproj">
+      <Project>{54EDF08D-B033-381D-B397-1B4EE6CBAA54}</Project>
+      <Name>find-and-modify</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\hello_mongoc.vcxproj">
+      <Project>{7B4DBCCF-6E24-3272-BC68-E2D0ED28E495}</Project>
+      <Name>hello_mongoc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\mongoc-dump.vcxproj">
+      <Project>{496ACD7C-052B-378F-B3DE-51DF0EC98CA3}</Project>
+      <Name>mongoc-dump</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\mongoc-ping.vcxproj">
+      <Project>{5FD56B85-60D6-3358-9C00-2965B3B0C55E}</Project>
+      <Name>mongoc-ping</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\mongoc-stat.vcxproj">
+      <Project>{E525E3A6-A602-316A-B9E7-36C528CD4166}</Project>
+      <Name>mongoc-stat</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\mongoc-tail.vcxproj">
+      <Project>{A8D6BC7D-C7F3-31C9-862F-A76C6073F35F}</Project>
+      <Name>mongoc-tail</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\mongoc_shared.vcxproj">
+      <Project>{E5A5FE65-A301-3C89-8C01-96CA57E60C8C}</Project>
+      <Name>mongoc_shared</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\mongoc_static.vcxproj">
+      <Project>{C5ECD9BD-E3EC-3764-ABC0-EE6592E80B55}</Project>
+      <Name>mongoc_static</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\test-libmongoc.vcxproj">
+      <Project>{6315B7CB-24AB-30FB-9CE2-4F29F9DA5A79}</Project>
+      <Name>test-libmongoc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\lizhanyou\Downloads\mongo-c-driver-1.14.0\build\src\libmongoc\test-mongoc-gssapi.vcxproj">
+      <Project>{65347082-A725-3EAF-AB09-11BA74F587A7}</Project>
+      <Name>test-mongoc-gssapi</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

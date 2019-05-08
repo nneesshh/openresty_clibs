@@ -1,0 +1,24 @@
+*.gcda
+*.gcno
+*.gz
+*.o
+*.pc
+*.so.*
+.githooks
+cmake-build
+cmake_install.cmake
+CMakeCache.txt
+CMakeFiles
+CPackConfig.cmake
+CPackSourceConfig.cmake
+CTestTestfile.cmake
+dist_manifest.txt
+Makefile
+test-results.json
+VERSION_CURRENT
+VERSION_RELEASED
+
+# Windows things
+*.sdf
+.vs
+install_manifest.txt
