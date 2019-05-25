@@ -67,6 +67,7 @@ static const luaL_Reg funcs[] = {
 	{"Int64", newInt64},
 	{"Javascript", newJavascript},
 	{"ObjectId", newObjectId},
+	{"ObjectIdFromData", newObjectIdFromData},
 	{"ReadPrefs", newReadPrefs},
 	{"Regex", newRegex},
 	{"Timestamp", newTimestamp},

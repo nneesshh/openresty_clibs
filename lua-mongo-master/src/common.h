@@ -71,6 +71,7 @@ int newInt32(lua_State *L);
 int newInt64(lua_State *L);
 int newJavascript(lua_State *L);
 int newObjectId(lua_State *L);
+int newObjectIdFromData(lua_State *L);
 int newReadPrefs(lua_State *L);
 int newRegex(lua_State *L);
 int newTimestamp(lua_State *L);
