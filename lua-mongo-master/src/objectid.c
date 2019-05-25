@@ -57,8 +57,12 @@ int newObjectId(lua_State *L) {
 	size_t len;
 	const char *data = lua_tolstring(L, 1, &len);
 	if (data) {
-		luaL_argcheck(L, (12 == len), 1, "invalid format");
-		bson_oid_init_from_data(lua_newuserdata(L, sizeof(bson_oid_t)), data);
+		if (12 == len)
+			bson_oid_init_from_data(lua_newuserdata(L, sizeof(bson_oid_t)), (const uint8_t*)data);
+		else if (24 == len)
+			bson_oid_init_from_string(lua_newuserdata(L, sizeof(bson_oid_t)), data);
+		else
+			luaL_argcheck(L, false, 1, "invalid format");
 	} else {
 		if (!lua_isnoneornil(L, 1)) return typeError(L, 1, "string");
 		bson_oid_init(lua_newuserdata(L, sizeof(bson_oid_t)), 0);

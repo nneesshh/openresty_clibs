@@ -146,14 +146,6 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ProjectReference Include="D:\test\lua-mongo-master\build\ZERO_CHECK.vcxproj">
-      <Project>{DCB1CC15-1FC1-3D85-9F78-9146760093F2}</Project>
-      <Name>ZERO_CHECK</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="..\src\bson.c" />
     <ClCompile Include="..\src\bsontype.c" />
     <ClCompile Include="..\src\bulkoperation.c" />
