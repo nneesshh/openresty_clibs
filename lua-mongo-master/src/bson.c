@@ -162,7 +162,8 @@ static bool appendBSONType(lua_State *L, bson_type_t type, int idx, int *nerr, b
 			break;
 		}
 		case BSON_TYPE_DATE_TIME:
-			bson_append_date_time(bson, key, klen, toInt64(L, top + 1));
+			/*bson_append_date_time(bson, key, klen, toInt64(L, top + 1));*/
+			bson_append_date_time(bson, key, klen, toInt64(L, top + 1) * 1000);
 			break;
 		case BSON_TYPE_REGEX:
 			bson_append_regex(bson, key, klen, lua_tostring(L, top + 1), lua_tostring(L, top + 2));
@@ -224,7 +225,8 @@ static void toBSONType(lua_State *L, bson_type_t type, int idx, bson_value_t *va
 			break;
 		}
 		case BSON_TYPE_DATE_TIME:
-			val->value.v_datetime = toInt64(L, top + 1);
+			/*val->value.v_datetime = toInt64(L, top + 1);*/
+			val->value.v_datetime = toInt64(L, top + 1) * 1000;
 			break;
 		case BSON_TYPE_REGEX:
 			val->value.v_regex.regex = bson_strdup(lua_tostring(L, top + 1));
@@ -604,7 +606,8 @@ void pushBSONValue(lua_State *L, const bson_value_t *val) {
 			break;
 		case BSON_TYPE_DATE_TIME:
 			lua_rawgetp(L, LUA_REGISTRYINDEX, &NEW_DATETIME);
-			pushInt64(L, val->value.v_datetime);
+			/*pushInt64(L, val->value.v_datetime);*/
+			pushInt64(L, val->value.v_datetime / 1000);
 			lua_call(L, 1, 1);
 			break;
 		case BSON_TYPE_CODE:
